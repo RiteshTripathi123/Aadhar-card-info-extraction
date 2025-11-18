@@ -1,0 +1,101 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #ffffffdd;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 18px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px #0002;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4c1d95;
+    font-size: 28px;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input[type="file"] {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px dashed #6d28d9;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.btn {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #6d28d9;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.loading {
+    text-align: center;
+    color: #4c1d95;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+.result {
+    margin-top: 25px;
+}
+
+.cards {
+    display: grid;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.card {
+    background: #f5f3ff;
+    padding: 15px;
+    border-radius: 12px;
+    border-left: 5px solid #6d28d9;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #4c1d95;
+}
+
+.card-value {
+    color: #333;
+    margin-top: 5px;
+} 

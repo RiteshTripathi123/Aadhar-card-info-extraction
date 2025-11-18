@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aadhaar OCR Extractor</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="title">Aadhaar Card OCR Extractor</h1>
+
+        <div class="upload-box">
+            <label for="fileInput" class="file-label">
+                Select Aadhaar Image / PDF
+            </label>
+            <input type="file" id="fileInput" accept=".pdf,.jpg,.jpeg,.png" />
+            <button id="uploadBtn" class="btn">Upload & Extract</button>
+            <p id="loading" class="loading hidden">⏳ Processing…</p>
+            <p id="errorMsg" class="error hidden"></p>
+        </div>
+
+        <div id="resultSection" class="result hidden">
+            <h2>Extracted Details</h2>
+            <div id="resultCards" class="cards"></div>
+
+            <button id="downloadJson" class="btn secondary">
+                Download JSON
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
